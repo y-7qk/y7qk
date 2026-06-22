@@ -1,1 +1,5 @@
-# y7qk
+# GitHub Pages おためし
+
+はじめて作ったページです。
+
+Markdownで書いています。
