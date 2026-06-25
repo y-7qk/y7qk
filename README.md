@@ -13,5 +13,21 @@ input_image = sys.argv[1]
 output_image = sys.argv[2]
 
 # 画像の読み込み
-img = Image.open(input
+img = Image.open(input_image)
+
+# 画像の左右反転
+img_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
+
+#画像の保存
+img_flip.save(output_image)
+~~~
+## 3.使い方
+3.1.実行例
+- コマンドラインフォーマット
+~~~python
+python3 flip.py<input_image_path><output_image_path>
+~~~
+- 利用例
+~~~python
+python3 flip.py input.jpg output.jpg
 ~~~
